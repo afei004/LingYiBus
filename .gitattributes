@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# UE 二进制资产禁止换行符转换，避免 .uasset 被误判为文本而损坏
+*.uasset binary
+*.umap binary
+*.uexp binary
+*.ubulk binary
