@@ -14,10 +14,13 @@ Build/
 *.VC.opendb
 
 # 外部导入的大体积资产（仅本机保留，不进 Git）
-# 路径规则：Fab「添加到项目」自动落 Content/Fab/；手动拖 FBX/贴图 → 放 Content/SceneAssets/
-# 注意：换机 / 重新 clone 后需手动把这些目录拷回来，否则车模型、纸箱、地面材质引用会断
+# 路径规则：Fab「添加到项目」多数落 Content/Fab/，但部分资源包会直接落 Content/<包名>/
+# 手动拖 FBX/贴图 → 放 Content/SceneAssets/
+# ⚠️ 每次从 Fab 新下一个大包，先确认它落在哪，若不在下面三行里就补一行
+# 注意：换机 / 重新 clone 后需手动把这些目录拷回来，否则车模型、场景模型引用会断
 /Content/Fab/
 /Content/SceneAssets/
+/Content/German_Forest/
 
 # 原始模型/贴图源文件，UE 不直接使用，一律不传
 *.fbx
