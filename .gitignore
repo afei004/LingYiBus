@@ -13,6 +13,21 @@ Build/
 *.VC.db
 *.VC.opendb
 
-# Fab 下载资产（约 472 MB，体积过大，仅本机保留，不进 Git）
-# 注意：换机 / 重新 clone 后需手动把 Content/Fab 拷回来，否则车模型、纸箱、地面材质引用会断
+# 外部导入的大体积资产（仅本机保留，不进 Git）
+# 路径规则：Fab「添加到项目」自动落 Content/Fab/；手动拖 FBX/贴图 → 放 Content/SceneAssets/
+# 注意：换机 / 重新 clone 后需手动把这些目录拷回来，否则车模型、纸箱、地面材质引用会断
 /Content/Fab/
+/Content/SceneAssets/
+
+# 原始模型/贴图源文件，UE 不直接使用，一律不传
+*.fbx
+*.obj
+*.blend
+*.glb
+*.gltf
+*.tga
+*.exr
+*.psd
+*.zip
+*.rar
+*.7z
