@@ -1,4 +1,4 @@
-// Copyright 星空汉化. All Rights Reserved.
+// Copyright 2026 StarGame. All Rights Reserved.
 
 using UnrealBuildTool;
 using System.IO;
@@ -46,7 +46,7 @@ public class StarryUEZh : ModuleRules
 		}
 		else
 		{
-			string DetoursDir = Path.Combine(ModuleDirectory, "..", "..", "ThirdParty", "Detours");
+			string DetoursDir = Path.Combine(ModuleDirectory, "..", "ThirdParty", "Detours");
 			PublicSystemIncludePaths.Add(Path.Combine(DetoursDir, "include"));
 			PublicAdditionalLibraries.Add(Path.Combine(DetoursDir, "lib", "detours.lib"));
 		}
